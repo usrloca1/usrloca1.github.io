@@ -4,7 +4,7 @@
   "description": "A powerful web proxy built for speed and customization.",
   "icons": [
       {
-        "src": "/logos/logo.svg",
+        "src": "./logos/logo.svg",
         "sizes": "72x72 96x96 128x128 144x144 152x152 192x192 384x384 512x512",
         "type": "image/svg+xml",
         "purpose": "any maskable"
@@ -15,7 +15,7 @@
         "type": "image/png"
       },
       {
-        "src": "/logos/logo512.png",
+        "src": "./logos/logo512.png",
         "sizes": "512x512",
         "type": "image/png"
       }
