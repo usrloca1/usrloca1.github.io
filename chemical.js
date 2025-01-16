@@ -283,10 +283,10 @@ function getTransport(transport) {
     switch (transport) {
         default:
         case "libcurl":
-            return "/libcurl/index.mjs"
+            return "./libcurl/index.mjs"
             break;
         case "epoxy":
-            return "/epoxy/index.mjs"
+            return "./epoxy/index.mjs"
             break;
     }
 }
@@ -345,14 +345,14 @@ function setupFetch() {
     }
 }
 
-await loadScript("/baremux/index.js");
+await loadScript("./baremux/index.js");
 if (uvEnabled) {
-    await loadScript("/uv/uv.bundle.js");
-    await loadScript("/uv/uv.config.js");
+    await loadScript("./uv/uv.bundle.js");
+    await loadScript("./uv/uv.config.js");
 }
 if (scramjetEnabled) {
-    await loadScript("/scramjet/scramjet.codecs.js");
-    await loadScript("/scramjet/scramjet.config.js");
+    await loadScript("./scramjet/scramjet.codecs.js");
+    await loadScript("./scramjet/scramjet.config.js");
 }
 window.chemical.connection = new window.BareMux.BareMuxConnection("/baremux/worker.js");
 await window.chemical.setTransport();
